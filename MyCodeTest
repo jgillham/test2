@@ -1,0 +1,14 @@
+import junit.*
+class Calculator {
+  public int add( int a, int b ) {
+    return a + b + 1;
+  }
+}
+public class MyCodeTest {
+  @Test
+  public test_amethod() {
+    Calculator instance = new Calculator();
+    // Will fail.
+    assertEquals( 3, instance.add( 1, 2 ) );
+  }
+}
